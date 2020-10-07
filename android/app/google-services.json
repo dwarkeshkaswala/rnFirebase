@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "767263158306",
+    "firebase_url": "https://crime-record-app.firebaseio.com",
+    "project_id": "crime-record-app",
+    "storage_bucket": "crime-record-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767263158306:android:6013662c008dd2a9da1a7b",
+        "android_client_info": {
+          "package_name": "com.rnFirebase.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767263158306-bq497a9v0rbk7jug4eovmmoc1j3ccpc3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEmo7AM8OIW7lGlL6zqLNxk1hMaXtEpBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767263158306-bq497a9v0rbk7jug4eovmmoc1j3ccpc3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
