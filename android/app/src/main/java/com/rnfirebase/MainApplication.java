@@ -1,4 +1,4 @@
-package com.rnfirebase.app;
+package com.rnFirebase.app;
 
 import android.app.Application;
 import android.content.Context;

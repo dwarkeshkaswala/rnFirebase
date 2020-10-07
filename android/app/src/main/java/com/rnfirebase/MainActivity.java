@@ -1,4 +1,4 @@
-package com.rnfirebase.app;
+package com.rnFirebase.app;
 
 import com.facebook.react.ReactActivity;
 
