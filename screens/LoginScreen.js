@@ -1,23 +1,23 @@
-import React, {useContext, useState} from 'react';
-import {View, Text, TouchableOpacity, Image, StyleSheet} from 'react-native';
+import React, { useContext, useState } from 'react';
+import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 import FormInput from '../components/FormInput';
 import FormButton from '../components/FormButton';
 import SocialButton from '../components/SocialButton';
 import { AuthContext } from '../navigation/AuthProvider';
 
-const LoginScreen = ({navigation}) => {
+const LoginScreen = ({ navigation }) => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
-  const {login} = useContext(AuthContext);
+  const { login } = useContext(AuthContext);
 
   return (
     <View style={styles.container}>
       <Image
-        source={require('../assets/rn-social-logo.png')}
+        source={require('../assets/guj-police.png')}
         style={styles.logo}
       />
-      <Text style={styles.text}>RN Social App</Text>
+      {/* <Text style={styles.text}>RN Social App</Text> */}
 
       <FormInput
         labelValue={email}
@@ -42,25 +42,29 @@ const LoginScreen = ({navigation}) => {
         onPress={() => login(email, password)}
       />
 
-      <TouchableOpacity style={styles.forgotButton} onPress={() => {}}>
+      <TouchableOpacity style={styles.forgotButton} onPress={() => { }}>
         <Text style={styles.navButtonText}>Forgot Password?</Text>
       </TouchableOpacity>
+      <View style={{ flex: 1, flexDirection: 'row' }}>
+        <SocialButton
+          style={{ marginRight: 0 }}
+          buttonTitle="Sign In with Facebook"
+          btnType="facebook"
+          color="#4867aa"
+          backgroundColor="#e6eaf4"
+          onPress={() => { }}
+        />
 
-      <SocialButton 
-        buttonTitle="Sign In with Facebook"
-        btnType="facebook"
-        color="#4867aa"
-        backgroundColor="#e6eaf4"
-        onPress={() => {}}
-      />
-      
-      <SocialButton 
-        buttonTitle="Sign In with Google"
-        btnType="google"
-        color="#de4d41"
-        backgroundColor="#f5e7ea"
-        onPress={() => {}}
-      />
+        <SocialButton
+          style={{ marginLeft: 0 }}
+          buttonTitle="Sign In with Google"
+          btnType="google"
+          color="#de4d41"
+          backgroundColor="#f5e7ea"
+          onPress={() => { }}
+        />
+      </View>
+
 
       <TouchableOpacity
         style={styles.forgotButton}
@@ -84,9 +88,10 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   logo: {
-    height: 150,
-    width: 150,
+    height: 210,
+    width: 165,
     resizeMode: 'cover',
+    marginVertical: 25,
   },
   text: {
     fontFamily: 'Kufam-SemiBoldItalic',
